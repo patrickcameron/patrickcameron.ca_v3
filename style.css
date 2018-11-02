@@ -80,16 +80,15 @@ p {
     right: 13px;
     padding-bottom: 26px;
     width: 100%;
+    animation-name: fade-in;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
 }
 
 .site-title span {
-    font-size: 210px;
+    font-size: 200px;
     font-weight: 700;
     mix-blend-mode: multiply;
-}
-
-.site-title span.blue {
-    color: #0091E5;
 }
 
 .site-title span.red {
@@ -97,6 +96,20 @@ p {
     position: absolute;
     left: 15px;
     top: 8px;
+    animation-name: fade-in;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.site-title span.blue {
+    color: #0091E5;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 0.6s;
 }
 
 .site-title span.yellow {
@@ -104,6 +117,11 @@ p {
     position: absolute;
     left: 26px;
     top: 17px;
+    animation-name: fade-in;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.59, -0.12, 1, 1);
+    animation-delay: 0.84s;
 }
 
 .skills {
@@ -127,10 +145,15 @@ li {
     line-height: 1.7;
 }
 
+/* Media Queries */
 @media screen and (min-width: 768px) {
     .block {
         margin: 82px auto;
         padding: 0 3.5em;
+    }
+
+    .site-title span {
+        font-size: 250px;
     }
 
     .skills {
@@ -139,5 +162,15 @@ li {
 
     .skills__single {
         width: 33%;
+    }
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
