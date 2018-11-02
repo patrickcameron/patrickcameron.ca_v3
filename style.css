@@ -1,0 +1,146 @@
+/* @font-face {
+    font-family: 'Karla';
+    src: url(fonts/Karla-Regular.ttf);
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #2f235e;
+    font-family: 'karla', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 19px;
+}
+
+h1, h2 {
+    font-family: 'Karla', -apple-system,system-ui,BlinkMacSystemFont,sans-serif; */
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 0.3em;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 1.4em;
+    letter-spacing: 0.12em;
+}
+
+a:hover {
+    border-bottom: 1px solid #008fe8 !important;
+}
+
+p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-top: 0;
+}
+
+.intro-text {
+    max-width: 700px;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 58px 14px;
+    max-width: 1200px;
+}
+
+.block a {
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: inherit;
+}
+
+.block__item {
+    display: block;
+    padding-right: 2em;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1em 0;
+}
+
+.block__item a {
+    display: inline-block;
+    margin-bottom: 0.4em;
+}
+
+.block__item p {
+    font-size: 16px;
+}
+
+.site-title {
+    position: relative;
+    right: 13px;
+    padding-bottom: 26px;
+    width: 100%;
+}
+
+.site-title span {
+    font-size: 210px;
+    font-weight: 700;
+    mix-blend-mode: multiply;
+}
+
+.site-title span.blue {
+    color: #0091E5;
+}
+
+.site-title span.red {
+    color: #E42149;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+}
+
+.site-title span.yellow {
+    color: #FFF146;
+    position: absolute;
+    left: 26px;
+    top: 17px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.skills__single {
+    padding-right: 2em;
+    margin: 1em 0;
+    width: 100%;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li {
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+@media screen and (min-width: 768px) {
+    .block {
+        margin: 82px auto;
+        padding: 0 3.5em;
+    }
+
+    .skills {
+        flex-wrap: nowrap;
+    }
+
+    .skills__single {
+        width: 33%;
+    }
+}
