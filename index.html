@@ -31,10 +31,10 @@
     <style>
         /* Load CSS for logo animation here to ensure it appears */
         .site-title {
+            cursor: default;
             position: relative;
             right: 13px;
             padding-bottom: 26px;
-            width: 100%;
             animation-name: fade-in;
             animation-duration: 0.5s;
             animation-fill-mode: forwards;
@@ -213,6 +213,19 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-68052819-1');
+    </script>
+
+    <!-- Tilt.js -->
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+
+    <script type="text/javascript">
+        const sitetitle = document.querySelector('.site-title');
+        VanillaTilt.init(sitetitle, {
+            max: 14,
+            reverse: false,
+            scale: 1.03,
+            speed: 10000,
+        } );
     </script>
 
 </body>
