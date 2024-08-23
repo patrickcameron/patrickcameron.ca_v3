@@ -1,219 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Patrick Cameron - Toronto Web Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Patrick Cameron - Toronto Frontend Software Developer</title>
+        
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+        <link rel="icon" href="favicon.ico">
 
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Patrick Cameron">
-    <meta name="description" content="Web developer from Toronto specializing in Angular and React.">
-    <meta name="google-site-verification" content="0LCh8Bm52Z3mYZa0gF3QdKNAoGkvaL6Y0jYrh613X-g" />
+        <script src="js/vanilla-tilt.min.js"></script>
+        <script src="js/scripts.js"></script>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="//patrickcameron.ca/">
-    <meta property="og:title" content="Patrick Cameron">
-    <meta property="og:description" content="Web developer from Toronto specializing in Angular and React.">
-    <meta property="og:image" content="//patrickcameron.ca/meta_image.jpg">
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Patrick Cameron">
+        <meta name="description" content="Frontend Software Developer">
+        <meta name="google-site-verification" content="0LCh8Bm52Z3mYZa0gF3QdKNAoGkvaL6Y0jYrh613X-g" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://patrickcameron.ca/">
-    <meta property="twitter:title" content="Patrick Cameron">
-    <meta property="twitter:description" content="Web developer from Toronto specializing in Angular and React.">
-    <meta property="twitter:image" content="https://patrickcameron.ca/meta_image.jpg">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="//patrickcameron.ca/">
+        <meta property="og:title" content="Patrick Cameron">
+        <meta property="og:description" content="Frontend Software Developer">
+        <meta property="og:image" content="//patrickcameron.ca/meta_image.jpg">
+    </head>
 
-    <style>
-        /* Load CSS for logo animation here to ensure it appears */
-        .site-title {
-            cursor: default;
-            position: relative;
-            right: 13px;
-            padding-bottom: 26px;
-            animation-name: fade-in;
-            animation-duration: 0.5s;
-            animation-fill-mode: forwards;
-        }
+    <body>
+        <main class="container">
 
-        .site-title span {
-            font-size: 200px;
-            font-weight: 700;
-            mix-blend-mode: multiply;
-        }
-
-        .site-title span.red {
-            color: #E42149;
-            position: absolute;
-            left: 15px;
-            top: 8px;
-            opacity: 0;
-            animation-delay: 0.5s;
-            animation-name: fade-in;
-            animation-duration: 0.6s;
-            animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-            animation-timing-function: ease-out;
-        }
-
-        .site-title span.blue {
-            color: #0091E5;
-            opacity: 0;
-            animation-name: fade-in;
-            animation-duration: 0.6s;
-            animation-fill-mode: forwards;
-            animation-timing-function: ease-out;
-        }
-
-        .site-title span.yellow {
-            color: #FFF146;
-            position: absolute;
-            left: 26px;
-            top: 17px;
-            animation-name: fade-in;
-            animation-duration: 0.6s;
-            animation-fill-mode: both;
-            animation-timing-function: ease-out;
-            animation-delay: 1s;
-        }
-
-        /* Animations */
-        @keyframes fade-in {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Media Queries */
-        @media screen and (min-width: 768px) {
-            .site-title span {
-                font-size: 250px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <main class="container">
-
-        <!-- Intro -->
-        <section class="block">
-
-            <span class="site-title" aria-hidden="true">
-                <span class="blue">PC</span>
-                <span class="red">PC</span>
-                <span class="yellow">PC</span>
-            </span>
-
-            <h1>Patrick Cameron</h1>
-            <div class="intro-text">
-                <br>
-                <p>I'm an experienced Front End Developer skilled in Angular, RxJS, Redux, TypeScript, Test Driven Development, and Accessibility. I'm currently working as a Senior Front End Developer at RBC, and have previously done agency work for Strategic Content Labs and Agency Undone.</p>
-
-                <p><a href="./patrick-cameron-resume-2024.pdf" target="_blank">Resume</a> | <a href="https://github.com/patrickcameron" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/p-cameron/" target="_blank">LinkedIn</a></p>
-
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section class="block">
-            <h2>Skills</h2>
-            <div class="skills">
-                <div class="skills__single">
-                    <p>Experienced in:</p>
-                    <ul>
-                        <li>Accessibility</li>
-                        <li>Angular</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Redux</li>
-                        <li>RxJS</li>
-                        <li>Test Driven Development</li>
-                        <li>TypeScript</li>
-                        <li>WordPress</li>
-                    </ul>
+            <!-- Intro -->
+            <section class="block">
+                <span class="site-title" aria-hidden="true">
+                    <span class="blue">PC</span>
+                    <span class="red">PC</span>
+                    <span class="yellow">PC</span>
+                </span>
+                <h1>Patrick Cameron</h1>
+                <div class="intro-text">
+                    <p>I'm an experienced Frontend Software Developer skilled in Angular, RxJS, Redux, TypeScript, Test Driven Development, and Accessibility. I'm currently working as a Senior Front End Developer at RBC building banking apps used by thousands of RBC employees and clients. I previously did agency work for Strategic Content Labs and Agency Undone.</p>
+                    <p><a href="./patrick-cameron-resume-2024.pdf" target="_blank">Resume</a> | <a href="https://github.com/patrickcameron" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/p-cameron/" target="_blank">LinkedIn</a></p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Past Work -->
-        <section class="block">
-            <h2>Work</h2>
-            <div class="block__item">
-                <a href="https://contentlabs.ca" target="_blank" rel="noopener noreferrer">Strategic Content Labs</a>
-                <p>WordPress, Timber, PJAX, Advanced Custom Fields</p>
-            </div>
-            <div class="block__item">
-                <a href="https://senatorboyer.ca" target="_blank" rel="noopener noreferrer">Senator Yvonne Boyer</a>
-                <p>WordPress, Timber, PJAX, Advanced Custom Fields, Twitter API</p>
-            </div>
-            <div class="block__item">
-                <a href="https://alliance2030.ca" target="_blank" rel="noopener noreferrer">Alliance 2030</a>
-                <p>WordPress, Timber, Advanced Custom Fields</p>
-            </div>
-            <div class="block__item">
-                <a href="https://contentlabs.ca/work/passport-2017/" target="_blank" rel="noopener noreferrer">Passport 2017</a>
-                <p>WordPress, Angular</p>
-            </div>
-            <div class="block__item">
-                <a href="https://reverent-jepsen-45bd4e.netlify.app/" target="_blank" rel="noopener noreferrer">Rachel Hawkes Cameron</a>
-                <p>Gatsby, React, Contentful</p>
-            </div>
-            <div class="block__item">
-                <a href="https://magnet.magazinescanada.ca/" target="_blank" rel="noopener noreferrer">MagNet</a>
-                <p>WordPress, Timber, Advanced Custom Fields</p>
-            </div>
-            <div class="block__item">
-                <a href="https://calgary-convention.com" target="_blank" rel="noopener noreferrer">Calgary TELUS Convention Centre</a>
-                <p>WordPress, Timber, Advanced Custom Fields</p>
-            </div>
-            <div class="block__item">
-                <a href="https://torontobeerweek.com" target="_blank" rel="noopener noreferrer">Toronto Beer Week</a> and <a href="https://torontococktailweek.ca" target="_blank" rel="noopener noreferrer">Toronto Cocktail Week</a>
-                <p>WordPress, Timber, Advanced Custom Fields, Instagram API, JavaScript animation</p>
-            </div>
-        </section>
+            <!-- Skills -->
+            <section class="block">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <p><strong>Languages:</strong> JavaScript / ES6, TypeScript, HTML5, CSS3, Sass</p>
+                    <p><strong>Frameworks & Libraries:</strong> Angular, React, NgRX/Redux, RxJS, Node.js</p>
+                    <p><strong>Testing:</strong> Jest, Jasmine, Cypress, Puppeteer</p>
+                    <p><strong>Tools & Platforms:</strong> Node.js, Git / GitHub, GitHub Copilot, Jenkins, Urbancode, Dynatrace, Splunk, Webpack </p>
+                    <p><strong>Accessibility:</strong> WCAG standards</p>
+                    <p><strong>Methodologies:</strong> Agile, Test-Driven Development, Continuous Delivery</p>
+                </div>
+            </section>
 
-        <!-- Side Projects -->
-        <section class="block">
-            <h2>Side Projects</h2>
-            <div class="block__item">
-                <a href="https://bestsellers-2a0f4.web.app/" target="_blank" rel="noopener noreferrer">New York Times Bestsellers</a>
-                <p>Angular, Firebase, RxJS</p>
-            </div>
-            <div class="block__item">
-                <a href="https://github.com/patrickcameron/teslasuperchargecalculator" target="_blank" rel="noopener noreferrer">Supercharger Totals for Chrome</a>
-                <p>Chrome Extension, JavaScript</p>
-            </div>
-        </section>
+            <!-- Past Work -->
+            <section class="block">
+                <h2>Work</h2>
+                <div class="block__item">
+                    <a href="https://senatorboyer.ca" target="_blank" rel="noopener noreferrer">Senator Yvonne Boyer</a>
+                    <p>WordPress, Timber, PJAX, Advanced Custom Fields, Twitter API</p>
+                </div>
+                <div class="block__item">
+                    <a href="https://alliance2030.ca" target="_blank" rel="noopener noreferrer">Alliance 2030</a>
+                    <p>WordPress, Timber, Advanced Custom Fields</p>
+                </div>
+                <div class="block__item">
+                    <a href="https://reverent-jepsen-45bd4e.netlify.app/" target="_blank" rel="noopener noreferrer">Rachel Hawkes Cameron</a>
+                    <p>Gatsby, React, Contentful</p>
+                </div>
+                <div class="block__item">
+                    <a href="https://torontobeerweek.com" target="_blank" rel="noopener noreferrer">Toronto Beer Week</a> and <a href="https://torontococktailweek.ca" target="_blank" rel="noopener noreferrer">Toronto Cocktail Week</a>
+                    <p>WordPress, Timber, Advanced Custom Fields, Instagram API, JavaScript animation</p>
+                </div>
+            </section>
 
-        <!-- Contact -->
-        <section class="block">
-            <h2>Contact</h2>
-            <a href="mailto:hi@patrickcameron.ca">hi@patrickcameron.ca</a>
-        </section>
+            <!-- Contact -->
+            <section class="block">
+                <h2>Contact</h2>
+                <a href="mailto:hi@patrickcameron.ca">hi@patrickcameron.ca</a>
+            </section>
 
-    </main>
+        </main>
+    </body>
 
-    <!-- Tilt.js -->
-    <script src="js/vanilla-tilt.min.js"></script>
-    <script>
-        const sitetitle = document.querySelector('.site-title');
-        VanillaTilt.init(sitetitle, {
-            max: 14,
-            reverse: false,
-            scale: 1.07,
-            speed: 10000,
-        } );
-    </script>
-
-</body>
 </html>

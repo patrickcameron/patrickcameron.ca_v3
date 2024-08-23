@@ -1,0 +1,165 @@
+::selection {
+    background-color: #0192e5;
+    color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #2f235e;
+    font-family: 'Karla', -apple-system,system-ui,BlinkMacSystemFont,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 19px;
+    padding-bottom: 40px;
+}
+
+h1, h2 {
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+a {
+    border-bottom: 1px solid;
+}
+
+a:hover {
+    border-bottom: 1px solid #008fe8 !important;
+}
+
+a, p {
+    font-size: 19px;
+}
+
+p {
+    line-height: 1.7;
+    margin-top: 0;
+}
+
+.intro-text {
+    max-width: 700px;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 58px 14px;
+    max-width: 1200px;
+}
+
+.block a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.block__item {
+    display: block;
+    padding-right: 2em;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1em 0;
+}
+
+.block__item a {
+    display: inline-block;
+    margin-bottom: 0.4em;
+}
+
+.block__item p {
+    font-size: 16px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .block {
+        margin: 82px auto;
+        padding: 0 3.5em;
+    }
+
+    .skills {
+        flex-wrap: nowrap;
+    }
+
+    .skills__single {
+        width: 33%;
+    }
+}
+
+/* Animated logo */
+.site-title {
+    cursor: default;
+    position: relative;
+    right: 13px;
+    padding-bottom: 26px;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.site-title span {
+    font-size: 200px;
+    font-weight: 700;
+    mix-blend-mode: multiply;
+}
+
+.site-title span.red {
+    color: #E42149;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-name: fade-in;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.site-title span.blue {
+    color: #0091E5;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.site-title span.yellow {
+    color: #FFF146;
+    position: absolute;
+    left: 26px;
+    top: 17px;
+    animation-name: fade-in;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .site-title span {
+        font-size: 250px;
+    }
+}
