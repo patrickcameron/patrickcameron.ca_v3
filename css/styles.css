@@ -96,7 +96,6 @@ p {
     cursor: default;
     position: relative;
     right: 13px;
-    padding-bottom: 26px;
     animation-name: fade-in;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
